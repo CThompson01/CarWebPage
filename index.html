@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<style>
+  .banner {
+    background-color:lightblue;
+    position: absolute;
+    color: #66b3ff;
+    text-shadow: 1px 1px #ffffff;
+    top:0px;
+    right: 0px;
+    width: 100%;
+  }
+
+  .container {
+    display:flex;
+  }
+
+  .flex-item {
+    color:#ffffff;
+    flex-grow:1;
+  }
+
+  .myFlexedImage {
+    display:flex;
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+
+  .first-car {
+    position: absolute;
+    width: 300;
+    height: 300;
+    background-color: black;
+    color: #ffffff;
+  }
+
+  .textcolor {
+    color: #ffffff;
+  }
+
+  .background {
+    background-image: url('images/background.jpg');
+    background-attachment: fixed;
+    background-size:100%;
+  }
+</style>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Car Page</title>
+  </head>
+  <body class="background">
+    <div class="banner">
+        <h1 align="center">My Favorite Cars</h1>
+    </div>
+    <br><br><br><br><br><br>
+
+    <div class="container">
+      <div class="flex-item textcolor">
+        <h1>My First Car</h1>
+        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      </div>
+      <div class="flex-item textcolor">
+        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      </div>
+      <div class="flex-item textcolor">
+        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      </div>
+    </div>
+  </body>
+</html>
