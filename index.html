@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <style>
   .banner {
-    background-color:lightblue;
+    background-color:#242859;
     position: absolute;
     color: #66b3ff;
     text-shadow: 1px 1px #ffffff;
     top:0px;
     right: 0px;
     width: 100%;
+  }
+
+  a {
+    color:#ffffff;
+    text-decoration: none;
   }
 
   .container {
@@ -19,21 +24,9 @@
     flex-grow:1;
   }
 
-  .myFlexedImage {
-    display:flex;
-    flex-flow: row nowrap;
-    align-items: center;
-  }
+  .table-div {
 
-  .first-car {
-    position: absolute;
-    width: 300;
-    height: 300;
-    background-color: black;
-    color: #ffffff;
-  }
-
-  .textcolor {
+    text-shadow:2px 1px darkblue;
     color: #ffffff;
   }
 
@@ -56,15 +49,39 @@
     <br><br><br><br><br><br>
 
     <div class="container">
-      <div class="flex-item textcolor">
-        <h1>My First Car</h1>
-        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      <div class="flex-item table-div">
+        <a href="https://www.ford.com/" target="_blank"><h3>Ford Fusion</h3></a>
+        <p style="color:grey; text-shadow:none;">This was my first car. It was ~$4,000.</p>
+        <img src="images/fordfusion.jpg" alt="A black ford fusion" width="500px" style="max-width:95%;height:auto;">
+
       </div>
-      <div class="flex-item textcolor">
-        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      <div class="flex-item table-div">
+        <a href="https://www.rolls-roycemotorcars.com/en-GB/ghost-overview.html" target="_blank"><h3>Rolls Royce</h3></a>
+        <p style="color:grey; text-shadow:none;">This is a Rolls Royce Ghost. They are ~$250,000.</p>
+        <img src="images/rollsroyceghost.jpg" alt="A white Rolls Royce Ghost" width="500px" style="max-width:95%;height:auto;">
       </div>
-      <div class="flex-item textcolor">
-        <img src="images/fusion.jpg" alt="A black ford fusion" style="max-width:95%;">
+      <div class="flex-item table-div">
+        <a href="https://www.bugatti.com/veyron/veyron-164-super-sport/" target="_blank"><h3>Bugatti Veyron</h3></a>
+        <p style="color:grey; text-shadow:none;">This is a Bugatti Veyron. They are ~$1.5 Million</p>
+        <img src="images/bugattiveyron.jpg" alt="A navy Bugatti Veyron" width="500px" style="max-width:95%;height:auto;">
+      </div>
+    </div>
+    <div class="container">
+      <div class="flex-item table-div">
+        <img src="images/transparent.png" alt="A transparent image, you shouldn't be seeing this" width="250px" style="max-width:95%;height:auto;">
+      </div>
+      <div class="flex-item table-div">
+        <a href="https://www.ferrari.com/en-US" target="_blank"><h3>Ferrari 488 Spider</h3></a>
+        <p style="color:grey; text-shadow:none;">This is a Ferrari 488 Spider. They are ~$280,000</p>
+        <img src="images/ferrarispider.jpg" alt="A blue Ferrari 488 Spider" width="500px" style="max-width:95%;height:auto;">
+      </div>
+      <div class="flex-item table-div">
+        <a href="https://www.lamborghini.com/en-en/brand/masterpieces/veneno" target="_blank"><h3>Lamborghini Veneno</h3></a>
+        <p style="color:grey; text-shadow:none;">This is a Lamborghini Veneno. They are ~$400,000</p>
+        <img src="images/lamborghiniveneno.jpg" alt="A grey Lamborghini Veneno" width="500px" style="max-width:95%;height:auto;">
+      </div>
+      <div class="flex-item table-div">
+        <img src="images/transparent.png" alt="A transparent image, you shouldn't be seeing this" width="250px" style="max-width:95%;height:auto;">
       </div>
     </div>
   </body>
